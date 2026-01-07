@@ -23,22 +23,22 @@ int main()
             printf("Your input is inaccurate\n");
         }
     }
-    printf("----------------------------\n");
-    printf("Serial no.    Mark     Grade\n");
-    printf("----------------------------\n");
+    printf("----------------------------------------------------------\n");
+    printf("Serial no.    TT    AT    CE    FE    Total Marks    Grade\n");
+    printf("----------------------------------------------------------\n");
     for(i=0; i<num; i++)
     {
-             if(mark[i]>79) printf("    %d.         %d        A+", i+1, mark[i]);
-        else if(mark[i]>74) printf("    %d.         %d        A", i+1, mark[i]);
-        else if(mark[i]>69) printf("    %d.         %d        A-", i+1, mark[i]);
-        else if(mark[i]>64) printf("    %d.         %d        B+", i+1, mark[i]);
-        else if(mark[i]>59) printf("    %d.         %d        B", i+1, mark[i]);
-        else if(mark[i]>54) printf("    %d.         %d        B-", i+1, mark[i]);
-        else if(mark[i]>49) printf("    %d.         %d        C+", i+1, mark[i]);
-        else if(mark[i]>44) printf("    %d.         %d        C", i+1, mark[i]);
-        else if(mark[i]>39) printf("    %d.         %d        D", i+1, mark[i]);
-        else printf("    %d.         %d        F", i+1, mark[i]);
+             if(mark[i]>79) printf("    %d.        %d    %d     %d     %d         %d         A+", i+1,mark_ind[i][0],mark_ind[i][1],mark_ind[i][2],mark_ind[i][3],mark[i]);
+        else if(mark[i]>74) printf("    %d.        %d    %d     %d     %d         %d         A", i+1,mark_ind[i][0],mark_ind[i][1],mark_ind[i][2],mark_ind[i][3],mark[i]);
+        else if(mark[i]>69) printf("    %d.        %d    %d     %d     %d         %d         A-", i+1,mark_ind[i][0],mark_ind[i][1],mark_ind[i][2],mark_ind[i][3],mark[i]);
+        else if(mark[i]>64) printf("    %d.        %d    %d     %d     %d         %d         B+", i+1,mark_ind[i][0],mark_ind[i][1],mark_ind[i][2],mark_ind[i][3],mark[i]);
+        else if(mark[i]>59) printf("    %d.        %d    %d     %d     %d         %d         B", i+1,mark_ind[i][0],mark_ind[i][1],mark_ind[i][2],mark_ind[i][3],mark[i]);
+        else if(mark[i]>54) printf("    %d.        %d    %d     %d     %d         %d         B-", i+1,mark_ind[i][0],mark_ind[i][1],mark_ind[i][2],mark_ind[i][3],mark[i]);
+        else if(mark[i]>49) printf("    %d.        %d    %d     %d     %d         %d         C+", i+1,mark_ind[i][0],mark_ind[i][1],mark_ind[i][2],mark_ind[i][3],mark[i]);
+        else if(mark[i]>44) printf("    %d.        %d    %d     %d     %d         %d         C", i+1,mark_ind[i][0],mark_ind[i][1],mark_ind[i][2],mark_ind[i][3],mark[i]);
+        else if(mark[i]>39) printf("    %d.        %d    %d     %d     %d         %d         D", i+1,mark_ind[i][0],mark_ind[i][1],mark_ind[i][2],mark_ind[i][3],mark[i]);
+        else printf("    %d.        %d    %d     %d     %d         %d         F", i+1,mark_ind[i][0],mark_ind[i][1],mark_ind[i][2],mark_ind[i][3],mark[i]);
         printf("\n");
     }
-    printf("----------------------------\n");
+    printf("---------------------------------------------------------\n");
 }
