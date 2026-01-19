@@ -2,9 +2,11 @@
 int main()
 {
     int num, i;
+    //taking the number of students as input
     printf("The number of students under consideration: ");
     scanf("%d", &num);
     int mark[num], mark_ind[num][3];
+    //taking marks in TT, AT, AS, FE as inputs
     for(i=0; i<num; i++)
     {
         printf("For student no. %d\n", i+1);
@@ -40,11 +42,14 @@ int main()
             printf("Your input is inaccurate\n");
             goto FE;
         }
+        //calculating grades
         mark[i] = mark_ind[i][0]+mark_ind[i][1]+mark_ind[i][2]+mark_ind[i][3];
     }
+    //making grade sheet
     printf("----------------------------------------------------------\n");
     printf("Serial no.    TT    AT    AS    FE    Total Marks    Grade\n");
     printf("----------------------------------------------------------\n");
+    //calculating grade
     for(i=0; i<num; i++)
     {
              if(mark[i]>79) printf("    %d.        %d    %d     %d     %d         %d         A+", i+1,mark_ind[i][0],mark_ind[i][1],mark_ind[i][2],mark_ind[i][3],mark[i]);
